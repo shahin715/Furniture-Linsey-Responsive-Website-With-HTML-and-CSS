@@ -87,6 +87,13 @@
     background-color: var(--color-primary);
     color: var(--color-white);
 }
+/* brand__name */
+.brand__name{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
 
 /* Small Mobile (480px and below) */
 @media (max-width: 480px) {
@@ -124,6 +131,10 @@
     .shop__now__button {
         padding: 6px 12px;
         font-size: 10px;
+    }
+    .brand__name{
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
     }
 }
 
@@ -174,6 +185,10 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
+    }
+    .brand__name{
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
     }
 }
 
@@ -226,6 +241,10 @@
         flex-direction: row;
         gap: 20px;
         justify-content: center;
+    }
+    .brand__name{
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
     }
 }
 
